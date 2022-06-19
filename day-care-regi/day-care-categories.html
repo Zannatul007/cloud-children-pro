@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="customize-styles/regi-form.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../customize-styles/regi-form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
@@ -16,18 +16,29 @@
 
 
 <body>
-    <div class="container mt-5 mb-5">
-        <div class="row d-flex g-5 align-items-center">
+    <div class="outer-box container mt-5 mb-5">
+        <div class="row d-flex  align-items-center">
             <div class=" col-lg-6">
-                <img id="form-img" src="images/form/form-todd.jpg" alt="">
+                <div class="container thumbnail">
+                    <h1>Welcome to Children-cloud!!</h1>
+                    <p>
+                        Parenting Guide,Daycare, Preschool,School-age,Special-childcare everything in one place for
+                        new
+                        and young parents.
+                    </p>
+                </div>
             </div>
             <form class="daycare-regi-form col-lg-6">
                 <div class="container mt-5 mb-5">
-
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <h1>
                             Categories
                         </h1>
+                        <small style="color:red;font-size:12px;">*Please fillup these required fields
+                            with
+                            the proper
+                            information about your
+                            daycare which will be shown on our website</small>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -138,16 +149,19 @@
                             </div>
                         </div>
                         <div class="col-lg-12 mt-3">
-                            <a href="day-care-facilities.html" class="btn btn-primary w-100">Submit</a>
+                            <a href="#" class="btn btn-primary w-100">Sign up</a>
 
                         </div>
+                    </div>
+                </div>
+
             </form>
 
         </div>
     </div>
 
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

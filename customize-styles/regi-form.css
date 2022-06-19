@@ -1,17 +1,52 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #e7f1ff;
 }
 
-#form-img {
-    opacity: .75;
-    height: 545px;
-    width: 545px;
+.outer-box {
+
+    background-image: linear-gradient(rgba(37, 43, 44, 0.89), rgba(187, 205, 231, 0.6)), url(../images/banner/pre1.jpg);
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+
+.daycare-regi-form {
+    background-color: white;
+    color: black;
+}
+
+.user-regi-form {
+    margin-top: 0;
+    background-color: white;
+    color: black;
 }
 
 .welcome {
     color: black;
     font-weight: 600;
     text-align: justify;
+}
+
+.thumbnail {
+
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.25);
+    /* Black background with 0.5 opacity */
+    position: relative;
+    color: #f1f1f1;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    padding-right: 25%;
+    margin-left: 2%;
+
+}
+
+.thumbnail>h1,
+.thumbnail>p {
+
+    color: white;
 }
 
 textarea {
@@ -25,8 +60,7 @@ textarea {
     /* overflow-y: scroll; */
 }
 
-textarea:hover,
-select:hover {
+textarea:hover {
     border: 2px solid blue;
 }
 
