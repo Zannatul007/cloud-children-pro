@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
 
     <!-- customize css -->
     <link rel="stylesheet" href="customize-styles/regi-form.css">
-    <title>New Daycare Regi</title>
+    <title>New Daycare Registration</title>
 </head>
 
 <body>
@@ -19,7 +23,7 @@
             <div class=" col-lg-6">
                 <img id="form-img" src="images/form/form-todd.jpg" alt="">
             </div>
-            <div class="daycare-regi-form col-lg-6">
+            <form class="daycare-regi-form col-lg-6">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="form-floating mb-3">
@@ -45,12 +49,19 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                         <div class="form-floating mb-3"><input type="password" class="form-control" name="day-pass"
                                 id="floating-day-pass" placeholder="Password">
                             <label for="floating-day-pass">Password</label>
                         </div>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating mb-3"><input type="password" class="form-control" name="day-pass"
+                                id="floating-day-con-pass" placeholder="Confirm Password">
+                            <label for="floating-day-con-pass">Confirm Password</label>
+                        </div>
+                    </div>
+
 
                     <div class="col-lg-12">
                         <div class="form-floating mb-3"><input type="text" class="form-control" name="day-address"
@@ -58,7 +69,7 @@
                             <label for="floating-day-address">Street Address</label>
                         </div>
                     </div>
-
+                    <!-- Districts dropdown -->
                     <div class="col-lg-6 ">
                         <select id="input-district" class="form-select p-3">
                             <option selected>Select district</option>
@@ -127,18 +138,6 @@
                             <option value="Narail">Narail</option>
                             <option value="Satkhira">Satkhira</option>
 
-
-
-                            Bagerhat
-                            Chuadanga
-                            Jessore
-                            Jhenaidah
-                            Khulna
-                            Kushtia
-                            Magura
-                            Meherpur
-                            Narail
-                            Satkhira
                         </select>
                     </div>
 
@@ -149,13 +148,55 @@
                         </div>
                     </div>
 
+                    <!-- Start Time & End Time -->
+                    <div class="col-lg-6">
+                        <div class="form-floating  mb-3">
+                            <input class="form-control" type="number" name="start-time" id="start-time"
+                                placeholder="Enter start time">
+                            <label for="start-time">Start-time</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="start-time" id="start-time-am">
+                            <label class="form-check-label" for="start-time-am">AM</label>
+                        </div>
+                        <div class="form-check">
+
+                            <input class="form-check-input" type="radio" name="start-time" id="start-time-pm">
+                            <label class="form-check-label" for="start-time-pm">PM </label>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating mb-3"><input class="form-control" type="number" name="end-time"
+                                id="end-time" placeholder="Enter end time">
+                            <label for="end-time">End-time</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="end-time" id="end-time-am">
+                            <label class="form-check-label" for="end-time-am">
+                                AM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="end-time" id="end-time-pm" checked>
+                            <label class="form-check-label" for="end-time-pm">
+                                PM
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 mt-3">
+                        <a href="day-care-facilities.html" class="btn btn-primary w-100">Submit</a>
+
+                    </div>
                 </div>
-
-            </div>
-
+            </form>
         </div>
-    </div>
 
+    </div>
 
 </body>
 
