@@ -11,12 +11,27 @@ body {
 
 }
 
-.daycare-regi-form {
+.daycare-form {
     background-color: white;
     color: black;
+    padding: auto;
 }
 
-.user-regi-form {
+.daycare-login-form {
+    background-color: white;
+    color: black;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.user-login-form {
+    background-color: white;
+    color: black;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.user-form {
     margin-top: 0;
     background-color: white;
     color: black;
