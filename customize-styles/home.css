@@ -11,6 +11,14 @@ body {
 
 }
 
+.dropdown-menu {
+    width: 1rem
+}
+
+.fa-solid {
+    color: #121c52;
+}
+
 .link {
     color: #121c52;
     font-weight: 500;
