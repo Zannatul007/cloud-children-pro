@@ -24,29 +24,28 @@
     <div class="container mb-5">
         <nav class="navbar fixed-top navbar-expand-lg">
 
-            <a class="link navbar-brand" href="#">Children-cloud</a>
+            <a class="link navbar-brand" href="../index.html">Children-cloud</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <li class="nav-item">
+                <a class="link nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="link nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="link nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="link nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link nav-link" href="#services">Services</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Child-Care Categories
                         </a>
+
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                             <li><a class="dropdown-item" href="#">Toddler</a></li>
@@ -77,7 +76,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-circle-user"></i>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby=user-dropdown">
+                        <ul class="dropdown-menu" aria-labelledby="user-dropdown">
                             <li><a class="dropdown-item" href="../login-page.html">Log In</a></li>
                             <hr>
                             <li><a class="dropdown-item" href="../register-page.html">Register</a></li>
@@ -106,21 +105,25 @@
 
             </div>
 
-            <form class=" daycare-form col-lg-6 pt-5 pb-5">
+            <form class=" daycare-form col-lg-6 pt-5 pb-5" action="day-care-facilities.html">
                 <div class="row d-flex">
-                    <h1>Create Account</h1>
+                    <p class="h3 mb-3">Create Account as a Day-Care Center</p>
                     <div class="col-lg-12">
                         <div class="form-floating mb-3">
+
                             <input type="text" class="form-control" name="day-name" id="floating-day-name"
-                                placeholder="Daycare Name">
-                            <label for="floating-day-name">DayCare Name</label>
+                                placeholder="Daycare Name" required>
+
+                            <label for="floating-day-name"><span style="color:red;font-size:1rem ;">*</span>
+                                DayCare Name</label>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" name="day-email" id="floating-day-email"
-                                placeholder="Daycare Email Address">
-                            <label for="floating-day-email">DayCare Email Address</label>
+                                placeholder="Daycare Email Address" required>
+                            <label for="floating-day-email"><span style="color:red;font-size:1rem ;">*</span> DayCare
+                                Email Address</label>
                         </div>
                     </div>
 
@@ -128,21 +131,24 @@
                     <div class="col-lg-6">
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control" name="day-number" id="floating-day-number"
-                                placeholder="Daycare Phone Number">
-                            <label for="floating-day-number">DayCare Phone Number</label>
+                                placeholder="Daycare Phone Number" required>
+                            <label for="floating-day-number"><span style="color:red;font-size:1rem ;">*</span> DayCare
+                                Phone Number</label>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="form-floating mb-3"><input type="password" class="form-control" name="day-pass"
-                                id="floating-day-pass" placeholder="Password">
-                            <label for="floating-day-pass">Password</label>
+                                id="floating-day-pass" placeholder="Password" required>
+                            <label for="floating-day-pass"><span style="color:red;font-size:1rem ;">*</span>
+                                Password</label>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-floating mb-3"><input type="password" class="form-control" name="day-pass"
-                                id="floating-day-con-pass" placeholder="Confirm Password">
-                            <label for="floating-day-con-pass">Confirm Password</label>
+                                id="floating-day-con-pass" placeholder="Confirm Password" required>
+                            <label for="floating-day-con-pass"><span style="color:red;font-size:1rem ;">*</span>Confirm
+                                Password</label>
                         </div>
                     </div>
 
@@ -155,8 +161,10 @@
                     </div>
                     <!-- Districts dropdown -->
                     <div class="col-lg-6 ">
-                        <select id="input-district" class="form-select p-3">
-                            <option selected>Select district</option>
+                        <select id="input-district" class="form-select p-3" required>
+
+
+                            <option value=" "><span style="color:red;font-size:1rem ;">*</span>Select district</option>
                             <option value="Dhaka">Dhaka</option>
                             <option value="Faridpur">Faridpur</option>
                             <option value="Gazipur">Gazipur</option>
@@ -227,8 +235,9 @@
 
                     <div class="col-lg-6">
                         <div class="form-floating mb-3"><input type="text" class="form-control" name="day-zipcode"
-                                id="floating-day-zipcode" placeholder="ZipCode">
-                            <label for="floating-day-zipcode">ZipCode</label>
+                                id="floating-day-zipcode" placeholder="ZipCode" required>
+                            <label for="floating-day-zipcode"><span style="color:red;font-size:1rem ;">*</span>
+                                ZipCode</label>
                         </div>
                     </div>
 
@@ -273,8 +282,8 @@
                     </div>
 
                     <div class="col-lg-12 mt-3">
-                        <a href="../day-care-regi-login/day-care-facilities.html"
-                            class="btn btn-primary w-100">Submit</a>
+                        <input type="submit" class="btn btn-primary w-100" value="Submit">
+
 
                     </div>
                 </div>
