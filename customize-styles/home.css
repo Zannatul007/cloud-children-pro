@@ -60,3 +60,35 @@ img {
 p {
     font-size: 12px;
 }
+
+.footer-basic {
+    background-color: #121c52;
+    color: gray;
+    font-size: medium;
+
+
+}
+
+.company-name {
+    color: white;
+    font-weight: 600;
+}
+
+.list-head {
+    color: white;
+}
+
+.fa-paper-plane {
+    color: gray;
+}
+
+
+.footer-basic ul {
+
+
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+
+}
