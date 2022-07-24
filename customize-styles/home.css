@@ -93,3 +93,18 @@ p {
 
 
 }
+
+.blog-img {
+    width: 18rem;
+    height: 12rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-link:hover {
+    color: white;
+
+}
